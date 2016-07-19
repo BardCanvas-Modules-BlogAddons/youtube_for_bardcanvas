@@ -1,0 +1,24 @@
+/**
+ * Additional styles
+ *
+ * @package    HNG2
+ * @subpackage youtube_for_editor
+ * @author     Alejandro Caballero - lava.caballero@gmail.com
+ */
+
+.mce-content-body .youtube_link {
+    display: inline-block;
+    width:  640px;
+    height: 360px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 360px;
+    font-family: 'Lucida Console', 'Courier new', 'Courier', monospace;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+    background-image: url('placeholder.jpg');
+}
