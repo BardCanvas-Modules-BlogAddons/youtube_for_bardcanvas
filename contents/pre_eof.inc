@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- Youtube for editor tinymce strings -->
+<!-- Youtube for bardcanvas tinymce strings -->
 
 <div id="youtube_for_bardcanvas_tinymce_strings" style="display: none;">
     <div class="title"><?= $this_module->language->tinymce_strings->title ?></div>

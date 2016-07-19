@@ -12,7 +12,7 @@
 use hng2_base\module;
 ?>
 
-<!-- youtube link embedder for editor -->
+<!-- youtube link embedder for bardcanvas -->
 
 <link rel="stylesheet" type="text/css"
       href="<?= $config->full_root_path ?>/<?= $this_module->name ?>/media/global_styles~v<?=$config->scripts_version?>.css">
