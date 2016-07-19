@@ -2,8 +2,8 @@
 /**
  * Addition of button definition for the post editor
  *
- * @package    HNG2
- * @subpackage youtube_for_editor
+ * @package    BardCanvas
+ * @subpackage youtube_for_bardcanvas
  * @author     Alejandro Caballero - lava.caballero@gmail.com
  */
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <language>
     
-    <display_name>Youtube link builder for editor</display_name>
+    <display_name>Youtube link builder</display_name>
     <icon>fa-youtube</icon>
     <description>
         Adds a button linking to a dialog that converts youtube links into player placeholders

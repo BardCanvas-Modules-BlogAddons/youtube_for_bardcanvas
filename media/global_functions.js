@@ -1,14 +1,14 @@
 /**
  * Global functions for the module
  *
- * @package    HNG2
- * @subpackage youtube_for_editor
+ * @package    BardCanvas
+ * @subpackage youtube_for_bardcanvas
  * @author     Alejandro Caballero - lava.caballero@gmail.com
  */
 
 // Styles to add to tinymce
 tinymce_default_css_files[tinymce_default_css_files.length]
-    = $_FULL_ROOT_PATH + '/youtube_for_editor/media/global_styles~v' + $_SCRIPTS_VERSION + '.css';
+    = $_FULL_ROOT_PATH + '/youtube_for_bardcanvas/media/global_styles~v' + $_SCRIPTS_VERSION + '.css';
 
 // Buttons collection below the post editor
 if( typeof $_POST_ADDON_FUNCTIONS == 'undefined' )
@@ -17,7 +17,7 @@ if( typeof $_POST_ADDON_FUNCTIONS == 'undefined' )
 // Callback for the button below the editor
 $_POST_ADDON_FUNCTIONS['embed_youtube_link_in_post_editor'] = function($trigger, $form)
 {
-    var $strings = $('#youtube_for_editor_tinymce_strings');
+    var $strings = $('#youtube_for_bardcanvas_tinymce_strings');
     var _title    = $strings.find('.title').text();
     var _caption  = $strings.find('.caption').text();
     var _invalid  = $strings.find('.invalid_link').text();
