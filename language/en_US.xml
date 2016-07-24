@@ -8,10 +8,10 @@
         and replaces them with an actual player on the frontend.
     </description>
 
-    <addon function="embed_youtube_link_in_post_editor" icon="fa-youtube">
+    <tinymce_addon function="embed_youtube_link_in_post_editor" icon="fa-youtube">
         <caption>YouTube</caption>
         <title>Embed YouTube video</title>
-    </addon>
+    </tinymce_addon>
 
     <tinymce_strings>
         <title>Embed Youtube link</title>

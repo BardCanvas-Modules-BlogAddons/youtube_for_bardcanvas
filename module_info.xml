@@ -18,7 +18,7 @@
     -->
 
     <template_includes>
-        <pre_rendering>add_button_to_addons_bar.inc</pre_rendering>
+        <!--<pre_rendering>add_button_to_addons_bar.inc</pre_rendering>-->
         <html_head>html_head.inc</html_head>
         <!--<pre_header></pre_header>-->
         <!--<header_top></header_top>-->

@@ -10,12 +10,8 @@
 tinymce_default_css_files[tinymce_default_css_files.length]
     = $_FULL_ROOT_PATH + '/youtube_for_bardcanvas/media/global_styles~v' + $_SCRIPTS_VERSION + '.css';
 
-// Buttons collection below the post editor
-if( typeof $_POST_ADDON_FUNCTIONS == 'undefined' )
-    var $_POST_ADDON_FUNCTIONS = {};
-
 // Callback for the button below the editor
-$_POST_ADDON_FUNCTIONS['embed_youtube_link_in_post_editor'] = function($trigger, $form)
+$_TINYMCE_ADDON_FUNCTIONS['embed_youtube_link_in_post_editor'] = function($trigger, $form)
 {
     var $strings = $('#youtube_for_bardcanvas_tinymce_strings');
     var _title    = $strings.find('.title').text();
