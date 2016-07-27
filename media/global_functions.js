@@ -18,7 +18,7 @@ $_TINYMCE_ADDON_FUNCTIONS['embed_youtube_link_in_post_editor'] = function($trigg
     var _caption  = $strings.find('.caption').text();
     var _invalid  = $strings.find('.invalid_link').text();
     
-    var editor_id = $form.find('textarea.tinymce').attr('id');
+    var editor_id = $form.find('textarea[class*="tinymce"]').attr('id');
     var editor    = tinymce.get(editor_id);
     editor.windowManager.open({
         title: _title,
