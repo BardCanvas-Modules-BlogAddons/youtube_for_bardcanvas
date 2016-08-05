@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
-
+    
     <version>0.1 beta</version>
     <group>BardCanvas</group>
     
@@ -16,7 +16,7 @@
         <bootstrap></bootstrap>
     </php_includes>
     -->
-
+    
     <template_includes>
         <!--<pre_rendering>add_button_to_addons_bar.inc</pre_rendering>-->
         <html_head>html_head.inc</html_head>
@@ -34,5 +34,11 @@
         <pre_eof>pre_eof.inc</pre_eof>
         <!--<post_rendering></post_rendering>-->
     </template_includes>
-
+    
+    <tinymce_additions>
+        <css>media/global_styles~v1.css</css>
+        <plugin name="youtube_for_bardcanvas">media/editor_plugin~v1.js</plugin>
+        <toolbar>youtube_for_bardcanvas</toolbar>
+    </tinymce_additions>
+    
 </module>
