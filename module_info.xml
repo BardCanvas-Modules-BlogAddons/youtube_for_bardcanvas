@@ -35,6 +35,25 @@
         <!--<post_rendering></post_rendering>-->
     </template_includes>
     
+    <extends_to>
+        <posts>
+            <post_record_class>
+                <get_processed_excerpt>extenders/url_converter.inc</get_processed_excerpt>
+                <get_processed_content>extenders/url_converter.inc</get_processed_content>
+            </post_record_class>
+        </posts>
+        <comments>
+            <comment_record_class>
+                <get_processed_content>extenders/url_converter.inc</get_processed_content>
+            </comment_record_class>
+        </comments>
+        <contact>
+            <pm_record_class>
+                <get_processed_contents>extenders/url_converter.inc</get_processed_contents>
+            </pm_record_class>
+        </contact>
+    </extends_to>
+    
     <tinymce_additions>
         <css>media/global_styles~v1.css</css>
         <plugin name="youtube_for_bardcanvas">media/editor_plugin~v1.js</plugin>
