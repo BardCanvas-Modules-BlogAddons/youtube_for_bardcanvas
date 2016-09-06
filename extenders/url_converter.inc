@@ -23,8 +23,12 @@ if( count($matches) > 0 )
     {
         if( preg_match('/(youtube\.com|youtu\.be)/i', $match) )
         {
-            $a = new SimpleXMLElement($match);
-            $contents = str_replace($match, $a["href"], $contents);
+            try {
+                $a = new SimpleXMLElement($match);
+                $contents = str_replace($match, trim($a["href"]), $contents);
+            } catch(\Exception $e) {
+                continue;
+            }
         }
     }
 }
