@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>Constructor de reproductor de YouTube</display_name>
+    <icon>fa-youtube</icon>
+    <description>
+        Añade un díalogo en TinyMCE para convertir vínculos de Youtube
+        en contenedores que son reemplazados por reproductores en las páginas.
+    </description>
+
+    <tinymce_strings>
+        <title>Insertar video de YouTube</title>
+        <caption>Pegar vínculo de video en YouTube</caption>
+        <invalid_link>La dirección introducida es inválida</invalid_link>
+    </tinymce_strings>
+
+</language>
