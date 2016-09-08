@@ -5,7 +5,7 @@
  * @var post_record $record
  * 
  * @package    BardCanvas
- * @subpackage external_usertags
+ * @subpackage youtube_for_bardcanvas
  * @author     Alejandro Caballero - lava.caballero@gmail.com
  */
 
