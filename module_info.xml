@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
     
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <group>BardCanvas</group>
     
     <working_flags>
@@ -56,7 +56,7 @@
     
     <tinymce_additions>
         <css>media/global_styles~v1.css</css>
-        <plugin name="youtube_for_bardcanvas">media/editor_plugin~v1.js</plugin>
+        <plugin name="youtube_for_bardcanvas">media/editor_plugin~v2.js</plugin>
         <toolbar>youtube_for_bardcanvas</toolbar>
     </tinymce_additions>
     

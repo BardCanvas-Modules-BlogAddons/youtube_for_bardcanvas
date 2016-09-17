@@ -8,26 +8,21 @@ tinymce.PluginManager.add('youtube_for_bardcanvas', function(ed, url)
     
     ed.addCommand('youtube_for_bardcanvas', function()
     {
-        ed.windowManager.open({
-            title: _title,
-            body: [
-                {type: 'textbox', name: 'yt_link', label: _caption}
-            ],
-            onsubmit: function(e) {
-                var link = e.data.yt_link;
-                if( link.match(/^((https:\/\/)?(www\.)?youtube\.com\/watch\?v=.*)|((https:\/\/)?youtu\.be\/.*)/i) == null )
-                {
-                    alert( _invalid );
-                    return;
-                }
+        var link = prompt(_caption, '');
         
-                if( link.match(/^https:\/\//i) == null ) link = 'https://' + link;
+        if( link == null ) return;
         
-                ed.insertContent(
-                    '<a class="youtube_link" href="' + link + '">' + link + '</a>'
-                );
-            }
-        });
+        if( link.match(/^((https:\/\/)?(www\.)?youtube\.com\/watch\?v=.*)|((https:\/\/)?youtu\.be\/.*)/i) == null )
+        {
+            alert( _invalid );
+            return;
+        }
+        
+        if( link.match(/^https:\/\//i) == null ) link = 'https://' + link;
+        
+        ed.insertContent(
+            '<a class="youtube_link" href="' + link + '">' + link + '</a>'
+        );
     });
     
     // Register example button
