@@ -38,7 +38,7 @@
     <extends_to>
         <posts>
             <post_record_class>
-                <get_processed_excerpt>extenders/url_converter.inc</get_processed_excerpt>
+                <get_processed_excerpt>extenders/excerpt_processor.inc</get_processed_excerpt>
                 <get_processed_content>extenders/url_converter.inc</get_processed_content>
             </post_record_class>
         </posts>
