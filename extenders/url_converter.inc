@@ -1,6 +1,6 @@
 <?php
 /**
- * Posts extender: Youtube URL converter for post excerpts
+ * Posts extender: Youtube URL converter for post contents
  *
  * @var post_record $record
  * 
