@@ -2,18 +2,14 @@
 /**
  * Posts extender: Youtube URL converter for post contents
  *
- * @var post_record $record
- * 
  * @package    BardCanvas
  * @subpackage youtube_for_bardcanvas
  * @author     Alejandro Caballero - lava.caballero@gmail.com
  */
 
-use hng2_modules\posts\post_record;
-
 include_once ROOTPATH . "/lib/phpQuery-onefile.php";
 
-global $config, $record;
+global $config;
 
 $contents = $config->globals["processing_contents"];
 
