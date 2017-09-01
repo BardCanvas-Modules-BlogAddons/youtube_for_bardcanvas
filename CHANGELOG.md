@@ -1,6 +1,10 @@
 
 # Youtube for BardCanvas Module Change Log
 
+## [1.1.6] - 2017-09-01
+
+- Added excerpt processor to show video thumbnails on post indexes.
+
 ## [1.1.5] - 2017-08-18
 
 - Refactored viewer converter to allow linking videos as normal anchors.
