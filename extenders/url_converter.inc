@@ -28,7 +28,9 @@ foreach($pq->find("a.youtube_link") as $a)
     $id = empty($matches[4][0]) ? $matches[9][0] : $matches[4][0];
     
     $search = $a->htmlOuter();
-    $html   = "<p class='youtube_container'><iframe class='youtube_video' src='https://www.youtube.com/embed/$id' frameborder='0' allowfullscreen></iframe></p>";
+    $html   = "<p class='youtube_container'><iframe class='youtube_video' data-video-id='$id'
+                  src='https://www.youtube.com/embed/$id?feature=player_embedded'
+                  frameborder='0' allowfullscreen></iframe></p>";
     
     $contents = str_replace($search, $html, $contents);
 }
