@@ -1,6 +1,10 @@
 
 # Youtube for BardCanvas Module Change Log
 
+## [1.1.7] - 2017-14-12
+
+- Added attribute to iFrame to allow DOM manipulation.
+
 ## [1.1.6] - 2017-09-01
 
 - Added excerpt processor to show video thumbnails on post indexes.
