@@ -20,12 +20,14 @@ foreach($pq->find("a.youtube_link") as $a)
     $a    = pq($a);
     $href = $a->attr("href");
     
-    preg_match_all('/\b((https:\/\/)?(www\.)?youtube\.com\/watch\?v=([a-z0-9\-_]+)(&(t=\d+))?)|((https:\/\/)?youtu\.be\/([a-z0-9\-_]+)(\?(t=\d+))?)\b/i', $href, $matches);
+    preg_match_all('/\b((https:\/\/)?(www\.)?youtube\.com\/watch\?v=([a-z0-9\-_]+)(&(t=\d+))?)|((https:\/\/)?youtu\.be\/([a-z0-9\-_]+)(\?(t=\d+))?)|((https:\/\/)?(www\.)?youtube\.com\/shorts\/([a-z0-9\-_]+))\b/i', $href, $matches);
     # echo "<pre class='framed_content'>" . print_r($matches, true) . "</pre>";
     
-    if( empty($matches[4]) && empty($matches[9]) ) continue;
+    if( empty($matches[4]) && empty($matches[9]) && empty($matches[15]) ) continue;
     
-    $id = empty($matches[4][0]) ? $matches[9][0] : $matches[4][0];
+    $id = $matches[4][0];
+    if( empty($id) ) $id = $matches[9][0];
+    if( empty($id) ) $id = $matches[15][0];
     
     $search = $a->htmlOuter();
     $html   = "<p class='youtube_container'><iframe class='youtube_video' data-video-id='$id'

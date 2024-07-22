@@ -12,7 +12,7 @@ tinymce.PluginManager.add('youtube_for_bardcanvas', function(ed, url)
         
         if( link == null ) return;
         
-        if( link.match(/^((https:\/\/)?(www\.)?youtube\.com\/watch\?v=.*)|((https:\/\/)?youtu\.be\/.*)/i) == null )
+        if( link.match(/^((https:\/\/)?(www\.)?youtube\.com\/watch\?v=.*)|((https:\/\/)?youtu\.be\/.*)|((https:\/\/)?(www\.)?youtube\.com\/shorts\/.*)/i) == null )
         {
             alert( _invalid );
             return;
