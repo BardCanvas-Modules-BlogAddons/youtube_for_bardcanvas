@@ -1,6 +1,10 @@
 
 # Youtube for BardCanvas Module Change Log
 
+## [1.1.8] - 2024-08-11
+
+- Added shorts embedding support.
+
 ## [1.1.7] - 2017-14-12
 
 - Added attribute to iFrame to allow DOM manipulation.
